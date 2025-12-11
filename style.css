@@ -19,7 +19,7 @@ body {background:#111; color:#fff;}
 .vertical-icons .icon:hover .label {opacity:1; right:50px;}
 
 /* Hero Section */
-.hero {background:url('images/back.jpg') no-repeat center center/cover; text-align:center; padding:100px 20px;}
+.hero {background:url('back.jpg') no-repeat center center/cover; text-align:center; padding:100px 20px;}
 .hero .profile-pic {width:180px; border-radius:50%; border:3px solid #ff9800;}
 .hero h1 {margin-top:20px; font-size:2.5rem; color:#ff9800;}
 .hero h2 {margin-top:10px; font-size:1.5rem; color:#fff;}
@@ -27,7 +27,7 @@ body {background:#111; color:#fff;}
 .btn.cv-btn:hover {background:#e68900;}
 
 /* About Section */
-.about-section {background:url('images/back2.jpg') no-repeat center center/cover; padding:60px 20px;}
+.about-section {background:url('back2.jpg') no-repeat center center/cover; padding:60px 20px;}
 .about-container {display:flex; align-items:center; justify-content:center; flex-wrap:wrap; gap:30px; max-width:1000px; margin:auto;}
 .about-photo img {width:200px; border-radius:50%; border:3px solid #ff9800;}
 .about-text {max-width:600px; text-align:left;}
