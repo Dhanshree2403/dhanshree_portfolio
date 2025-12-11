@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dhanshree Vaidya Portfolio</title>
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- SVG for project-skill connections -->
+  <svg id="connections" class="connections-svg"></svg>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Dhanshree Vaidya</div>
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Vertical Icons -->
+  <div class="vertical-icons">
+    <a href="https://github.com/Dhanshree2403" target="_blank" class="icon">
+      <i class="fab fa-github"></i><span class="label">GitHub</span>
+    </a>
+    <a href="https://linkedin.com/in/dhanshree-vaidya-174b12315" target="_blank" class="icon">
+      <i class="fab fa-linkedin"></i><span class="label">LinkedIn</span>
+    </a>
+    <a href="https://instagram.com/madhura5474" target="_blank" class="icon">
+      <i class="fab fa-instagram"></i><span class="label">Instagram</span>
+    </a>
+    <a href="resume MY (1).pdf" open class="icon">
+      <i class="fas fa-file-pdf"></i><span class="label">CV</span>
+    </a>
+  </div>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="hero-content">
+      <img src="images/madhu.jpeg" alt="My Photo" class="profile-pic">
+      <h1>Hello, I'm <span>Dhanshree Vaidya</span></h1>
+      <h2><span class="typing"></span></h2>
+      <a href="resume MY (1).pdf" download class="btn cv-btn">📄 Download CV</a>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about" class="about-section">
+    <h2>About Me</h2>
+    <div class="about-container">
+      <div class="about-photo">
+        <img src="images/madhu.jpeg" alt="Dhanshree Vaidya">
+      </div>
+      <div class="about-text">
+        <p>
+          My name is <strong>Dhanshree Vaidya</strong>. I am an <strong>MCA student</strong> with a passion for learning and exploring new technologies.
+          I have different technical skills across web development, mobile apps, and Python projects.
+          I am a hardworking individual, always eager to face challenges and grow through new opportunities.
+          My goal is to keep improving and contribute meaningfully with my knowledge and dedication.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li data-skill="HTML">HTML</li>
+      <li data-skill="CSS">CSS</li>
+      <li data-skill="JavaScript">JavaScript</li>
+      <li data-skill="React">Kotlin</li>
+      <li data-skill="Kotlin">Kotlin</li>
+      <li data-skill="Android">Android</li>
+      <li data-skill="Python">Python</li>
+      <li data-skill="MySQL">SQLite</li>
+      <li data-skill="IoT">IoT</li>
+      <li data-skill="Arduino">Arduino</li>
+      <li data-skill="Automation">Automation</li>
+      <li data-skill="Algorithms">Algorithms</li>
+      <li data-skill="GUI">GUI</li>
+      <li data-skill="Logic">Logic</li>
+    </ul>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-container">
+      <div class="project-card" onclick="openModal('project1')">
+        <img src="images/to do list .jpg" alt="To-Do List App">
+        <h3>To-Do List App</h3>
+        <div class="project-skills">
+          <span>HTML</span><span>css</span><span>JavaScript</span>
+        </div>
+      </div>
+      <div class="project-card" onclick="openModal('project2')">
+        <img src="images/car parcking.jpg" alt="Car Parking IoT">
+        <h3>Car Parking System IoT</h3>
+        <div class="project-skills">
+          <span>IoT</span><span>Arduino</span><span>Kotlin</span>
+        </div>
+      </div>
+      <div class="project-card" onclick="openModal('project3')">
+        <img src="images/smart home iot.jpg" alt="Smart Home IoT">
+        <h3>IoT Smart Home (Kotlin)</h3>
+        <div class="project-skills">
+          <span>IoT</span><span>Kotlin</span><span>Automation</span>
+        </div>
+      </div>
+      <div class="project-card" onclick="openModal('project4')">
+        <img src="images/smart caculator.jpg" alt="Smart Calculator">
+        <h3>Smart Calculator</h3>
+        <div class="project-skills">
+          <span>Python</span><span>Algorithms</span><span>GUI</span>
+        </div>
+      </div>
+      <div class="project-card" onclick="openModal('project5')">
+        <img src="images/appoinment.jpg" alt="Online Appointment System">
+        <h3>Online Appointment Booking System</h3>
+        <div class="project-skills">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span>
+        </div>
+      </div>
+      <div class="project-card" onclick="openModal('project6')">
+        <img src="images/tic tak toe.jpg" alt="Tic-Tac-Toe">
+        <h3>Tic-Tac-Toe</h3>
+        <div class="project-skills">
+          <span>Python</span><span>Logic</span>
+        </div>
+      </div>
+      <div class="project-card" onclick="openModal('project7')">
+        <img src="images/shopindia.jpg" alt="ShopIndia">
+        <h3>ShopIndia</h3>
+        <div class="project-skills">
+          <span>HTML,CSS,JavaScript</span><span>React</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h3 id="modal-title"></h3>
+      <p id="modal-desc"></p>
+      <img id="modal-img" src="" alt="" />
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:your@email.com">dhanshreevaidya6@email.com</a></p>
+    <p>Phone: +91-9699932247</p>
+  </section>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
